@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+    <style>
+      .btn {
+        width: 200px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include('partials/navbar',{user}) %>
+    <div style="padding: 10px;" class="center-align">
+      <h3 style="margin-bottom: 20px;">Sign In</h3>
+      <a class="waves-effect waves-light btn red" href="/auth/google"
+        >Login with
+        <i
+          class="fa fa-google-plus"
+          aria-hidden="true"
+          style="margin-left: 5px;"
+        ></i
+      ></a>
+      <br />
+      <a
+        class="waves-effect waves-light btn  purple darken-3"
+        href="/auth/facebook"
+        >Login with
+        <i
+          class="fa fa-facebook"
+          aria-hidden="true"
+          style="margin-left: 5px;"
+        ></i
+      ></a>
+      <br />
+      <a class="waves-effect waves-light btn  black" href="/auth/github"
+        >Login with
+        <i class="fa fa-github" aria-hidden="true" style="margin-left: 5px;"></i
+      ></a>
+    </div>
+  </body>
+</html>

@@ -7,6 +7,12 @@ router.get('/login', (req, res, next) => {
   });
 });
 
+router.get('/signup', (req, res, next) => {
+  res.render('signup', {
+    user: req.user
+  });
+});
+
 router.get('/logout', (req, res, next) => {
   req.logOut();
   res.redirect('/');
